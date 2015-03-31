@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: eduardo.sanson
-Build-Jdk: 1.8.0_40
+Built-By: Usuario
+Build-Jdk: 1.8.0_20
 Created-By: Maven Integration for Eclipse
 

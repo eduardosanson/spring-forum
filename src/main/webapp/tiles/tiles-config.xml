@@ -20,6 +20,11 @@
 		<put-attribute name="titulo" value="Bem vindo(a)!"/>
 	</definition>
 	
+	<definition name="usuario/posts"
+				template="views/usuario/postsUsuario.jsp"/>
+				
+	
+	
 	
 
 

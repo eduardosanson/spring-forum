@@ -32,8 +32,8 @@ public class HomeController {
 	@RequestMapping("/")
 	public String index(Map<String, Object> model){
 
-		//model.put("assuntos",getDaoAssunto().list());
-		//model.put("usuarios", getDaoUsuario().list());
+		model.put("assuntos",getDaoAssunto().list());
+		model.put("usuarios", getDaoUsuario().list());
 		
 		return "index";
 	}
@@ -55,19 +55,19 @@ public class HomeController {
 			model.put("usuario", usuario);
 			return registro(model);			
 		}
-		//getDaoUsuario().persistir(usuario);
+		getDaoUsuario().persistir(usuario);
 		
 		if(!avatar.isEmpty()){
-			//processarAvatar(usuario,avatar);
+			processarAvatar(usuario,avatar);
 		}
 		sessao.setAttribute("usuario", usuario);
 		
-		return "redirect/";
+		return "redirect:/";
 	}
 	
 	private void processarAvatar(Usuario usuario, MultipartFile avatar) throws IOException {
 		byte[] conteudo = avatar.getBytes();
-		//persistirConteudo(usuario,conteudo);
+		persistirConteudo(usuario,conteudo);
 		
 	}
 

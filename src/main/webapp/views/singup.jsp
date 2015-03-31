@@ -2,7 +2,7 @@
 
 <sf:form modelAttribute="usuario" action="executarRegistro" enctype="multipart/form-data">
 	
-	<label for="nome">Nome:<sf:errors path="nome" cssClass="erro"/></label>
+	<label for="nome">Nome:<sf:errors path="nome" cssClass="erro"></sf:errors></label>
 	<sf:input path="nome"/>
 	
 	<label for="email">Email</label>
